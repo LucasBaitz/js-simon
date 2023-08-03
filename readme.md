@@ -2,7 +2,7 @@
 
 Um jogo clássico de memória implementado com HTML, CSS e JavaScript. Teste sua memória e habilidades de reconhecimento de padrões repetindo as sequências de blocos coloridos tocadas pelo computador.
 
-Demo: [Link]()
+Demo: [Link](https://js-simon.vercel.app)
 
 ## Como Jogar
 1. Clique no botão de "Ligar" para começar o jogo.
