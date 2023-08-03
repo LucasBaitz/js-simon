@@ -1,4 +1,4 @@
-Jogo JS Says (Simon Says)
+### Jogo JS Says (Simon Says)
 
 Um jogo clássico de memória implementado com HTML, CSS e JavaScript. Teste sua memória e habilidades de reconhecimento de padrões repetindo as sequências de blocos coloridos tocadas pelo computador.
 
