@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Says</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="gameOverScreen" id="gameOverScreen">
+            <div class="gameOverSign">Game Over!</div>
+        </div>
+        <div class="game">
+            <div class="roundCounter" id="score">0</div>
+            <div class="right-part">
+                <div class="game-tile red" id="red" data-game-tile="red"></div>
+                <div class="game-tile blue" id="blue" data-game-tile="blue"></div>
+            </div>
+            <div class="left-part">
+                <div class="start-game">
+                    <button class="start-btn" data-start>
+                        <img src="/assets/imgs/power-button.svg" alt="">
+                    </button>
+                </div>
+                <div class="game-tile green" id="green" data-game-tile="green"></div>
+                <div class="game-tile yellow" id="yellow" data-game-tile="yellow"></div>
+            </div>
+        </div>
+    </main>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
