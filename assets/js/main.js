@@ -66,13 +66,17 @@ async function computerPlayTiles() {
 function bleepAsync(tile, color) {
   return new Promise(resolve => {
     tile.style.backgroundColor = color;
-    bleepSounds[color].play();
+    
+    const tileSound = new Audio(bleepSounds[color].src); // Create a new audio instance
+    tileSound.play();
+
     setTimeout(() => {
       tile.style.backgroundColor = colorResets[tile.id];
       resolve();
     }, 1000);
   });
 }
+
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -126,8 +130,11 @@ function gameLoop() {
   roundsCounter++;
   increaseRoundsCounter(roundsCounter);
   removeTileClickListeners();
-  computerPlayTiles();
-  capturePlayerClick();
+
+  setTimeout(() => {
+    computerPlayTiles();
+    capturePlayerClick();
+  }, 2000);
 }
 
 function removeTileClickListeners() {
